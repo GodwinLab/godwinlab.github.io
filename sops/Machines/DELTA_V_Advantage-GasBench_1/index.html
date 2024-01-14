@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../Balance/">
       
       
-        <link rel="next" href="../MAT253-Kiel_IV/">
+        <link rel="next" href="../DELTA_V_Plus-Costech/">
       
       
       <link rel="icon" href="../../assets/img/logo-blue.jpg">
@@ -225,7 +225,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../Balance/" class="md-tabs__link">
           
   
   Machines
@@ -334,6 +334,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../Balance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine: Balance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -388,10 +408,50 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#procedures" class="md-nav__link">
+    Procedures
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flush-on-gasbench-2" class="md-nav__link">
+    Flush on GasBench (2)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DELTA_V_Plus-Costech/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine: DELTA V Plus&ndash;Costech
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -408,6 +468,26 @@
   
   <span class="md-ellipsis">
     Machine: MAT253&ndash;Kiel_IV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Nu_Perspective/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine: Nu Perspective
   </span>
   
 
@@ -462,10 +542,41 @@
 <h1 id="machine-delta-v-advantage-gasbench-1">Machine: DELTA V Advantage&ndash;GasBench (1)</h1>
 <h2 id="sample-preparation">Sample preparation</h2>
 <ul>
-<li>Sample vial: 12 ml borosilicate glass vial (<a href="https://www.labco.co.uk/products/standard-exetainer-cap/category/15-round-borosilicate">Labco 9RK8</a>)</li>
+<li>Sample vial: disposable 12 ml borosilicate glass vial (<a href="https://www.labco.co.uk/products/standard-exetainer-cap/category/15-round-borosilicate">Labco 9RK8</a>)</li>
 <li>Sample size: 100&ndash;200 µg</li>
-<li>Sequence (standards 16 + samples 50): Carrara Z × 3, Fletton clay, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Fletton clay, Carrara Z × 3</li>
+<li>? Sequence (24 dummies + standards 16 + samples 50): <mark>8 bypass (old Carrara Z)</mark>, Carrara Z × 3, Fletton clay, <mark>8 bypass (old samples/standards)</mark>, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Fletton clay, Carrara Z × 3, <mark>8 acid dump</mark></li>
 </ul>
+<h2 id="procedures">Procedures</h2>
+<ol>
+<li>Check acid pump<ol>
+<li><code>Forward</code></li>
+<li>manually click button on acid pump ~6 times?</li>
+<li>wipe off acid</li>
+</ol>
+</li>
+<li>Put on dummies/standards/samples</li>
+<li>Needle maintenance<ul>
+<li>curve</li>
+<li>hole is clear</li>
+<li>use little drill to clean (~1 mm)</li>
+</ul>
+</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Aquisation: edit .seq file<ul>
+<li>Filename</li>
+<li>Option</li>
+</ul>
+</li>
+<li>Ref 1<ul>
+<li>44, 45, 46 ~4500?</li>
+</ul>
+</li>
+<li>Start</li>
+<li>Check first bypass: peaks should decrease</li>
+</ol>
+<h3 id="flush-on-gasbench-2">Flush on GasBench (2)</h3>
+<ol>
+<li>Check the out flow</li>
+</ol>
 
 
 
