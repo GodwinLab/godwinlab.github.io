@@ -225,7 +225,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Balance/" class="md-tabs__link">
+        <a href="../Aerodyne/" class="md-tabs__link">
           
   
   Machines
@@ -329,6 +329,26 @@
             Machines
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Aerodyne/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aerodyne
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -645,42 +665,61 @@
 <ul>
 <li>Sample vial: disposable 12 ml borosilicate glass vial (<a href="https://www.labco.co.uk/products/standard-exetainer-cap/category/15-round-borosilicate">Labco 9RK8</a>)</li>
 <li>Sample size: 100&ndash;200 µg</li>
-<li>? Sequence (24 dummies + standards 16 + samples 50): <mark>8 bypass (old Carrara Z)</mark>, Carrara Z × 3, Fletton clay, <mark>8 bypass (old samples/standards)</mark>, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Carrara Z × 2, 10 samples, Fletton clay, Carrara Z × 3, <mark>8 acid dump</mark></li>
+<li>Sequence (16 standards + 50 samples), 96 positions:<ul>
+<li>8 bypass (last run Carrara Z)</li>
+<li>Carrara Z × 3, Fletton clay</li>
+<li>8 bypass (6 last run Carrara Z, 2 last run Fletton clay)</li>
+<li>(10 samples, Carrara Z × 2) × 4, 10 samples, Fletton clay, Carrara Z × 3</li>
+<li>8 dummies for acid drop</li>
+<li>6 acid reservoirs</li>
+</ul>
+</li>
 </ul>
 <h2 id="procedures">Procedures</h2>
 <ol>
 <li>Check data (<mark>esp. last one</mark>) and acid usage</li>
 <li>Check acid pump (esp. Monday)<ol>
 <li><code>Forward</code></li>
-<li>manually click button on acid pump multiple times: should be &lt;4s per drop</li>
+<li>manually click button on acid pump multiple times: should be <mark>&lt;4s??</mark> per drop</li>
 <li>wipe off acid</li>
-<li>?? change Acid Pump&ndash;<code>Calibrate...</code></li>
+<li>consider changing <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Acid Pump&ndash;<code>Calibrate...</code></li>
 </ol>
 </li>
-<li>Refill acid (stock is on SIRA)</li>
 <li>Put on dummies/standards/samples</li>
 <li>Needle maintenance<ul>
-<li>curve</li>
+<li>magnifier<ul>
+<li>curve is original/smooth</li>
 <li>hole is clear</li>
-<li>use little drill to clean (~1 mm)</li>
-<li>put tubes behind the arm of auto-sampler and connect the needles</li>
 </ul>
 </li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Aquisation: edit .seq file<ul>
-<li>Filename</li>
-<li>use a different method with more acid drops for samples with less TIC</li>
-<li>Option</li>
+<li>if last batch has abnormal <mark>peak shape/location??</mark>, use little drill to clean (~1 mm)</li>
+<li>put capillaries behind the arm of auto-sampler and put back needles</li>
 </ul>
 </li>
-<li>Check: Ref 1 On/Off </li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Aquisation: choose and edit .seq file<ul>
+<li><mark>usually:</mark> <code>extra8</code></li>
+<li><mark>input <code>Identifier 1</code> for samples, <code>Weight</code> for standards</mark></li>
+<li>use a different method (<mark>e.g.: Acid Drop &amp;  Measure 6 drop</mark> ) with more acid drops for samples with less TIC</li>
+<li><code>Options</code>: update <mark>date</mark> in the folder&rsquo;s name</li>
+<li><code>Save</code></li>
+</ul>
+</li>
+<li>Check: Ref CO<sub>2</sub> On/Off (esp. Monday)</li>
 <li>Start</li>
-<li>Check first bypass: peaks should decrease</li>
+<li>Check first bypass: peaks should gradually decrease one by one</li>
 </ol>
 <h3 id="flush-on-gasbench-2">Flush on GasBench (2)</h3>
 <ol>
-<li>Needle maintenance&hellip;</li>
-<li>Put back needle and <mark>press OK</mark></li>
-<li>Sequence: GAS FLUSHFILL MISC SINGLE NEEDLE</li>
+<li>Needle maintenance&hellip;<ul>
+<li>&hellip;</li>
+<li><mark>check flow rate</mark><ul>
+<li>if &lt; 80 and/or last batch has abnormal <mark>peak shape/location??</mark>, use little drill to clean (~1 mm)</li>
+</ul>
+</li>
+<li>&hellip; put back needle and <mark>press OK</mark></li>
+</ul>
+</li>
+<li>Sequence: <code>GAS FLUSHFILL MISC SINGLE NEEDLE</code></li>
 <li>First one:<ol>
 <li>Check out flow from the glass capillary</li>
 <li>Check on/off results of the working gas (routine for DIC analysis)</li>
