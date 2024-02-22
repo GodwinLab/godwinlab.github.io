@@ -469,6 +469,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#version-history" class="md-nav__link">
+    Version history
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -686,21 +693,24 @@
 </ol>
 </li>
 <li>Put on dummies/standards/samples</li>
-<li>Needle maintenance<ul>
+<li>Needle maintenance<ol>
 <li>magnifier<ul>
 <li>curve is original/smooth</li>
 <li>hole is clear</li>
 </ul>
 </li>
-<li>if last batch has abnormal <mark>peak shape/location??</mark>, use little drill to clean (~1 mm)</li>
-<li>put capillaries behind the arm of auto-sampler and put back needles</li>
+<li>use little drill to clean: poke in &lt;1 mm, no need to be too invasive unless last batch:<ul>
+<li>first two peaks are smaller than latter peaks</li>
+<li>peaks do not gradually decrease one by one</li>
 </ul>
 </li>
+<li>put capillaries behind the arm of auto-sampler and put back needles</li>
+</ol>
+</li>
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Aquisation: choose and edit .seq file<ul>
-<li><mark>usually:</mark> <code>extra8</code></li>
-<li><mark>input <code>Identifier 1</code> for samples, <code>Weight</code> for standards</mark></li>
-<li>use a different method (<mark>e.g.: Acid Drop &amp;  Measure 6 drop</mark> ) with more acid drops for samples with less TIC</li>
-<li><code>Options</code>: update <mark>date</mark> in the folder&rsquo;s name</li>
+<li>usually use <code>Carbonate Acid Measure 50 Extra8.seq</code> (with <code>Acid Drop &amp; Measure.met</code>), if more acid drops are needed for some samples with less TIC, use <code>Carbonate Acid Measure 50 Extra8 diff drops.seq</code> and change method into, for instance, <code>Acid Drop &amp; Measure 12 drops.met</code> for these samples</li>
+<li>input <code>Identifier 1</code> for samples, <code>Identifier 2</code> (weight) for standards</li>
+<li><code>Options</code>: update date in the <code>Folder Name</code> and <code>Export File Name</code></li>
 <li><code>Save</code></li>
 </ul>
 </li>
@@ -710,20 +720,17 @@
 </ol>
 <h3 id="flush-on-gasbench-2">Flush on GasBench (2)</h3>
 <ol>
-<li>Needle maintenance&hellip;<ul>
+<li>Needle maintenance&hellip;<ol>
 <li>&hellip;</li>
-<li><mark>check flow rate</mark><ul>
-<li>if &lt; 80 and/or last batch has abnormal <mark>peak shape/location??</mark>, use little drill to clean (~1 mm)</li>
-</ul>
-</li>
-<li>&hellip; put back needle and <mark>press OK</mark></li>
-</ul>
-</li>
-<li>Sequence: <code>GAS FLUSHFILL MISC SINGLE NEEDLE</code></li>
-<li>First one:<ol>
-<li>Check out flow from the glass capillary</li>
-<li>Check on/off results of the working gas (routine for DIC analysis)</li>
+<li>&hellip;</li>
+<li>check flow rate: &gt;80</li>
+<li>put back needle and <mark>press OK</mark></li>
 </ol>
+</li>
+<li>Sequence: <code>CARB FLUSHFILL MISC SINGLE NEEDLE.seq</code> with <code>CARB FLUSHFILL 6min MOD.met</code> (stop <code>Flush Fill</code> at 350 s before pulling out needle)</li>
+<li>Check<ul>
+<li>on/off results of the working gas for DIC analysis</li>
+</ul>
 </li>
 </ol>
 <h2 id="acid-pump">Acid pump</h2>
@@ -837,6 +844,14 @@
 </ul>
 </li>
 </ol>
+</li>
+</ul>
+<h2 id="version-history">Version history</h2>
+<ul>
+<li>2024-02-22:<ul>
+<li>Add flow rate check during needle maintenance for flush on GasBench (2)</li>
+<li>Less invasive clean with a little drill</li>
+</ul>
 </li>
 </ul>
 
