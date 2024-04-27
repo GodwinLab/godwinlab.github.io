@@ -530,9 +530,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deash" class="md-nav__link">
+  <a href="#de-ash" class="md-nav__link">
     <span class="md-ellipsis">
-      Deash
+      De-ash
     </span>
   </a>
   
@@ -827,14 +827,41 @@
 <h1 id="delta-v-plus-costech-ea">DELTA V Plus&ndash;Costech EA</h1>
 <h2 id="sample-preparation">Sample preparation</h2>
 <ul>
-<li>Sample size:  µg</li>
-<li>Sequence:</li>
+<li>
+<p>Sample size: </p>
+<ul>
+<li><a href="https://analytical-reference-materials.iaea.org/iaea-600">IAEA-600</a>: (C/N = 5, δ<sup>13</sup>C<sub>VPDB</sub> = −27.771, δ<sup>15</sup>N<sub>Air</sub> = +1): 400 µg</li>
+<li><a href="https://tsapps.nist.gov/srmext/certificates/archives/8573.pdf">USGS40</a> (RM 8573, C/N = 5, δ<sup>13</sup>C<sub>VPDB</sub> = −26.39, δ<sup>15</sup>N<sub>Air</sub> = −4.52): 800 µg</li>
+<li>CC31 (Whatman® α-cellulose, δ<sup>13</sup>C<sub>VPDB</sub> = −25.54, δ<sup>18</sup>O<sub>SMOW</sub> = 31.85)</li>
+</ul>
+</li>
+<li>
+<p>Sequence:</p>
+<ul>
+<li>dummy at the end: in case auto-sampler is stuck</li>
+</ul>
+</li>
 </ul>
 <h2 id="procedures">Procedures</h2>
-<p>Work&ndash;Enter</p>
-<p>Standby&ndash;Enter (gas flow off)</p>
-<h3 id="deash">Deash</h3>
-<p>200 samples</p>
+<ol>
+<li>Check<ul>
+<li>He cylinder</li>
+<li>Total number of analysis, de-ash/change chemicals</li>
+<li>Vac = xe-6 bar indicating needle valve is on</li>
+<li>Slider&hellip;</li>
+<li>He flow rate to the auto-sampler: 80&ndash;100 ml/min</li>
+</ul>
+</li>
+<li>Work&ndash;Enter:<ul>
+<li>Rise temperatures for L reaction, R reduction, O GC</li>
+<li>ca. 45 min</li>
+</ul>
+</li>
+<li>&hellip;</li>
+<li>Standby&ndash;Enter (temperatures decrease, He flow off)</li>
+</ol>
+<h3 id="de-ash">De-ash</h3>
+<p>per ca. 200 samples</p>
 <ol>
 <li>Turn off source</li>
 <li>Turn off needle valve (Check: Vac 1e-6 → 1e-7)</li>
@@ -852,7 +879,7 @@
 <li>Turn on source</li>
 </ol>
 <h3 id="change-chemicals">Change chemicals</h3>
-<p>&gt;1000 samples, can be ~1300</p>
+<p>per &gt;1000 samples, can be ~1300</p>
 <ol>
 <li>Take out 2 tubes<ol>
 <li>Turn off source</li>
@@ -944,6 +971,13 @@
 </tbody>
 </table>
 <h2 id="misc">Misc.</h2>
+<ul>
+<li>Config<ul>
+<li>disable remote control: Abort&ndash;Enter</li>
+<li>enable remote control after all lights are green (indicating temperature for L, R, O reach set values)</li>
+</ul>
+</li>
+</ul>
 <h2 id="data-quality-control">Data quality control</h2>
 <h2 id="version-history">Version history</h2>
 
