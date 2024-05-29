@@ -505,6 +505,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reboot-auto-sampler" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reboot auto-sampler
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-he-ca-6-months" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace He (ca. 6 months)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-filament-1027920" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace filament (#1027920)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nafion-for-water-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nafion for water removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-fan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace fan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -916,7 +967,7 @@
 <tbody>
 <tr>
 <td>High Voltage</td>
-<td>2.952 kV</td>
+<td>2.954 kV</td>
 </tr>
 <tr>
 <td>HV</td>
@@ -924,29 +975,29 @@
 </tr>
 <tr>
 <td>Box</td>
-<td>0.74 mA</td>
+<td>0.68 mA</td>
 </tr>
 <tr>
 <td>Trap</td>
-<td>0.76 mA</td>
+<td>0.82 mA</td>
 </tr>
 <tr>
-<td>Vac (needle valve off)</td>
-<td>4.9e-8</td>
+<td>Vac (needle valve off, source off)</td>
+<td>4.4e-8 mBar</td>
 </tr>
 <tr>
-<td>Vac (needle valve on)</td>
-<td>8.9e-7</td>
+<td>Vac (needle valve on, source on/off)</td>
+<td>9.5e-7 mBar</td>
 </tr>
 <tr>
 <td>On/Off 44, 45, 46</td>
-<td>3780, 4470, 5400</td>
+<td>3780, 4470, 5400 mV</td>
 </tr>
 </tbody>
 </table>
 <h2 id="misc">Misc.</h2>
+<h3 id="reboot-auto-sampler">Reboot auto-sampler</h3>
 <ul>
-<li>Reboot auto-sampler:<ul>
 <li>disconnect power cord, reconnect</li>
 <li>Check positions<ul>
 <li>remove needles</li>
@@ -954,57 +1005,80 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>Change fan<ul>
-<li>push and pull out/insert the cable</li>
-</ul>
-</li>
-<li>Nafion for water removal</li>
-<li>Replace He (ca. 6 months)<ol>
+<h3 id="replace-he-ca-6-months">Replace He (ca. 6 months)</h3>
+<ol>
 <li>turn off source, needle valve</li>
-<li>old cylinder: turn off valve, disconnect, write MT</li>
+<li>old cylinder: turn off valve, disconnect, write: &ldquo;MT&rdquo;</li>
 <li>new cylinder: connect (<mark>using a short spanner</mark> to prevent over-tightness), 3 bar (&gt;1 bar for regulator in GasBench), leak check, write date</li>
-<li>wait 5 mins, turn on needle valve</li>
+<li>wait 15 mins, turn on needle valve</li>
 <li>turn on source</li>
 </ol>
+<h3 id="replace-filament-1027920">Replace filament (#1027920)</h3>
+<ol>
+<li>turn off: source, needle valve (clockwise), main &amp; secondary pumps (on the panel, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16v34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32S289.7 0 272 0h-96zm72 192v128c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> hear the turbo pump down)<ul>
+<li>Inlet pump: for dual inlet</li>
+</ul>
 </li>
-<li>Replace filament (#1027920)<ol>
-<li>turn off: source, needle valve, pumps (on the panel, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16v34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32S289.7 0 272 0h-96zm72 192v128c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> hear the turbo pump down)</li>
-<li>open door by removing 2 screws</li>
+<li>dismantle ion source<ol>
+<li>open door by loosen 2 socket screws</li>
 <li>unplug 3 cables without damaging the PCB</li>
 <li>loose 4 screws</li>
 <li>remove 3 screws</li>
 <li>press source when loosening the 4<sup>th</sup> screw to prevent it popping out</li>
+</ol>
+</li>
 <li><a href="https://paleowave.net/paleowave/2017/3/30/replacing-a-filament-on-an-isotope-ratio-mass-spectrometer">replace filament</a><ol>
 <li><mark>gloves on</mark></li>
-<li>take off 4 screws</li>
+<li>check with multimeter</li>
+<li>take off 4 screws (hold with tweezers to protect ceramics)</li>
 <li>half tighten 2 screws, push filament <mark>up left</mark>, fully tighten 2 screws</li>
 <li>insert two leads (+/−) into the slots</li>
 <li>press and check the metal connections</li>
-<li>check multimeter</li>
+<li>check with multimeter</li>
 </ol>
 </li>
+<li>turn on main &amp; secondary pumps (on the panel)</li>
 <li>monitor high vacuum (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M.3 89.5C.1 91.6 0 93.8 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4.1-6.5.3-9.2.9-17.8 3.8-25.5 8.2-10.2 6-18.6 14.6-24.3 25-3.9 7.3-6.5 15.4-7.4 24zM48 224h416v192c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224z"/></svg></span> Instrument control)<ul>
-<li>Scan Time: 100000?, Delay: 0.1</li>
-<li>1e-6 → &lt;1e-7</li>
+<li>Scan Time: 1000000, Delay: 0.1 or 1?</li>
+<li>1e-6 → &lt;1e-7 (after a whole weekend: 5e-8 for GasBench (2))</li>
+<li>Source LED turns to green</li>
 </ul>
 </li>
-<li>turn on pumps (on the panel)</li>
-<li>turn on source (needle valve off): high vacuum increases, and then return back</li>
-<li><mark>turn off source</mark></li>
-<li>turn on needle valve <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16v34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32S289.7 0 272 0h-96zm72 192v128c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> high vacuum ≈1e-6</li>
-<li>note down previous sensitivity</li>
-<li><code>Auto focus</code></li>
-<li>save</li>
-<li><code>Pass to gasconfiguration</code></li>
-<li>run <code>CO2 OnOff Sept2014.seq</code> (100 measurements, save in <code>... CO2 ONOFF</code>)<ul>
-<li>BGD44: 14 → 2.4 mV</li>
-<li>sensitivity: 4500 → 4100</li>
-<li>check linearity between different cycles within one measurement (1&ndash;10V, step?, ??&lt;0.03‰/V)</li>
+<li>source<ol>
+<li>check: turn on source with the needle valve closed<ul>
+<li>Emission &amp; Voltage LED turns to green</li>
+<li>HV, Box, Trap</li>
+<li>Vac increases ~0.6e-8</li>
+</ul>
+</li>
+<li>turn off source</li>
+<li>open needle valve (anti-clockwise one turn)</li>
+<li>turn on source</li>
+</ol>
+</li>
+<li>tune<ol>
+<li>Ref1 on</li>
+<li>Peak center, note down current sensitivity, screenshot current <code>Focus Delta</code> panel</li>
+<li><code>Auto focus</code><ul>
+<li>untick: Accelerating Voltage, Emission (max: 15 mA), Trap (max: 40 V), Electron Energy (max: 124 eV), Extraction Voltage (ca. 80%)</li>
+<li>Measuring Channel: 1, Integration Time: 0.1 s, Min Step: 1, Max Step: 10, Min Delay: 50 ms, Max Delay: 500 ms, Max Iterations: 3, Simulated Poti Turn: 2</li>
+</ul>
+</li>
+<li>save to: Global&ndash;Focus Settings&ndash;<code>$DATE $NAME</code></li>
+<li><code>Pass to Gasconfiguration</code></li>
+</ol>
+</li>
+<li>run <code>CO2 OnOff *.seq</code> (AS Method: <code>Disabled</code>, Method: <code>CO2OnOff.met</code>@GasBench (1), <code>CARB ONOFF.met</code>@GasBench (2)@<code>Gasbench+acid</code>, 100 measurements, save in <code>$DATE CO2 ONOFF</code>)<ul>
+<li>BGD44: 14 → 2.4 mV@GasBench (1), 10 → 2.8 → 2.4 mV@GasBench (2)</li>
+<li>sensitivity: ↘︎↗︎↘︎—, tune again after stabilized</li>
+<li>check linearity (1&ndash;10 V, step 1 V, δ13C: 0.04‰/V, δ18O: 0.05‰/V)</li>
 </ul>
 </li>
 </ol>
-</li>
+<h3 id="nafion-for-water-removal">Nafion for water removal</h3>
+<h3 id="replace-fan">Replace fan</h3>
+<ul>
+<li>push and pull out/insert the cable</li>
 </ul>
 <h2 id="version-history">Version history</h2>
 <ul>

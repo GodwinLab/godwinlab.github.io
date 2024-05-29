@@ -586,6 +586,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-ref-gas-refill" class="md-nav__link">
+    <span class="md-ellipsis">
+      ?? Check ref gas refill
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-bellow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace bellow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -890,37 +914,101 @@
 </tr>
 <tr>
 <td>Box</td>
-<td>0.83 mA</td>
+<td>0.75 mA</td>
 </tr>
 <tr>
 <td>Trap</td>
-<td>0.67 mA</td>
+<td>0.75 mA</td>
 </tr>
 <tr>
 <td>Vac (needle valve off)</td>
-<td>xe-8</td>
+<td>2.4e-8 mBar</td>
 </tr>
 <tr>
 <td>Vac (needle valve on)</td>
-<td>1.3e-7</td>
+<td>1.3e-7 mBar</td>
 </tr>
 <tr>
 <td>FV</td>
-<td>2.6e-6</td>
+<td>2.6e-6 mBar</td>
 </tr>
 </tbody>
 </table>
 <h2 id="misc">Misc.</h2>
 <ul>
 <li>Idle: fill pos 1, 2 of line 1, 2 with empty vials</li>
-<li><mark>Check ref gas refill</mark><ol>
+</ul>
+<h3 id="check-ref-gas-refill">?? Check ref gas refill</h3>
+<ol>
 <li>set bellow to 100</li>
 <li>pump away </li>
 <li>10 s &hellip;</li>
-<li></li>
+</ol>
+<h3 id="replace-bellow">Replace bellow</h3>
+<ol>
+<li>Prepare<ol>
+<li>bellow@10%</li>
+<li>source off</li>
+<li>all valves off</li>
 </ol>
 </li>
+<li>remove valve body<ol>
+<li>mark vales &amp; compressed air lines</li>
+<li>disconnect round cable</li>
+<li>mark the position of anti-spin, and then remove anti-spin guide screw (2a)</li>
+<li>remove retaining screw (≈2c) from underneath</li>
+<li>remove travel adjustment set by removing 4 nuts<ul>
+<li>no need to remove brass cap</li>
 </ul>
+</li>
+<li>remove <a href="https://uk.rs-online.com/web/c/fasteners-fixings/pins-keys-retaining-clips/spring-pins/">spring pin</a> (⌀ 3 mm, 4b)<ul>
+<li>have to set bellow@16% (so that spring pin is vertical)</li>
+</ul>
+</li>
+<li>disconnect compressed air lines for 6 valves</li>
+<li>ref bellow:<ol>
+<li>disconnect 2 metal lines at the top of valve body</li>
+<li>disconnect transducer</li>
+</ol>
+</li>
+<li>remove 4 stud bolt nuts (+ 4 washers, 8 mm or 5/16”??)<ul>
+<li>!!! during reassemble: evenly screw in so that the new gold gasket is evenly compressed</li>
+</ul>
+</li>
+<li>pull valve body off</li>
+</ol>
+</li>
+<li>replace bellow<ol>
+<li>remove 8 Allen key bolts</li>
+<li>push shaft from the other side (L wrench + hammer) + pull (4) stud bolts<ul>
+<li>burrs on shaft and/or bushing can make it difficult to pull or push it out. Gently file them off after removing the shaft</li>
+</ul>
+</li>
+<li>screw out bushing</li>
+<li>move shaft to the new bellow</li>
+<li>move 4 stud bolts (unscrew 4 bolts on the brass retainer) to the new bellow</li>
+<li>install new gold gasket into recessed port</li>
+</ol>
+</li>
+<li>clean and grease: bushing threads, shaft (optional)</li>
+<li>reassemble&hellip;<ul>
+<li>screw in bushing after putting shaft in place</li>
+</ul>
+</li>
+<li>Tune<ol>
+<li>pump and check leak (of valves, bellow, with Ar)</li>
+<li>bellow calibration<ol>
+<li>Hardware Calibration<ul>
+<li>can manually set the position of the bushing (cf. position of the other bellow)</li>
+<li>need to connect to the air (take off the metal blockage at the end of one metal line) to move the bellow</li>
+</ul>
+</li>
+<li>Signal Calibration</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
 
 
