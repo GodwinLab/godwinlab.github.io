@@ -785,8 +785,8 @@
 <li>1.5 ml sample</li>
 <li>200 µl standard in reusable inserts, mark them<ol>
 <li>DY-2 × 2</li>
-<li>BOTTY (δ<sup>18</sup>O = -7)  × 2</li>
-<li>SPIT (δ<sup>18</sup>O = 0, or SWIM?) × 2</li>
+<li>BOTTY (δ<sup>18</sup>O = -7)  × 2, bracket samples</li>
+<li>SPIT 2 (δ<sup>18</sup>O = 0, or SWIM?) × 2</li>
 </ol>
 </li>
 </ol>
@@ -794,15 +794,16 @@
 <ul>
 <li>caps are not tight</li>
 <li>no bubbles</li>
-<li>~1.5 h for one analysis</li>
+<li>1.5 h for one analysis (10 injections)</li>
 <li>password: picarro</li>
 </ul>
 <h2 id="procedures">Procedures</h2>
 <ol>
 <li>Turn on<ol>
-<li><code>Start Instrument</code></li>
-<li>vaporiser pump</li>
-<li>N<sub>2</sub> cylinder (?2.5 psi, never &gt;5 psi)<ul>
+<li>Open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears</li>
+<li>vacuum pump</li>
+<li>vaporization module: T = 110 °C</li>
+<li>N<sub>2</sub> cylinder (? ca. 2.5 psi, never &gt;5 psi)<ul>
 <li>H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
 </ul>
 </li>
@@ -830,27 +831,30 @@
 <p>Autosampler</p>
 <ol>
 <li>
-<p>select job?</p>
+<p>Method: <code>Picarro Z</code></p>
 </li>
 <li>
 <p><code>Start Current Job</code></p>
 </li>
 <li>Check</li>
-<li>H<sub>2</sub>O  ≈ 20,000 ppm</li>
+<li>H<sub>2</sub>O  ≈ 20,000 ppm (pump to ~300 ppm)</li>
 <li>peak shape: &hellip;</li>
-<li>Outlet valve</li>
-<li>?external heater: 12V, T = 110 °C</li>
-<li>stable cavity T: 79.994–80.004 °C</li>
+<li>Outlet valve: 27000 when pumping, 24000 when measuring</li>
+<li>Instrument Status<ul>
+<li>Warm Box T: 45.000 °C</li>
+<li>! stable Cavity T: 79.994–80.004 °C</li>
+<li>Cavity P: 50 Torr</li>
+</ul>
+</li>
 <li>data:<ul>
-<li>SD?? δ<sup>18</sup>O = 0.1‰, δD = 1‰</li>
-<li>SPIT δ<sup>18</sup>O: (-1 to 1‰)</li>
+<li>SD? δ<sup>18</sup>O = 0.1‰, δD = 1‰</li>
 </ul>
 </li>
 <li>Post run</li>
 <li>rinse syringe</li>
 <li>if idle for long time<ol>
 <li>turn off N<sub>2</sub> cylinder</li>
-<li>turn off vaporiser pump</li>
+<li>turn off vacuum pump</li>
 </ol>
 </li>
 </ol>
