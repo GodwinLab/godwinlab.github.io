@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/img/logo-blue.jpg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -612,6 +612,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#replace-catalyst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replace catalyst
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -758,48 +782,82 @@
 <h1 id="picarro-l2140-i">Picarro L2140-<em>i</em></h1>
 <h2 id="sample-preparation">Sample preparation</h2>
 <ol>
-<li>Check liquid quantity 1.5 ml</li>
-<li>Loosen lids</li>
-<li>Fill standards (no bubbles!), mark them<ol>
-<li>DY-2</li>
-<li>BOTTY</li>
-<li>SPIT</li>
+<li>1.5 ml sample</li>
+<li>200 µl standard in reusable inserts, mark them<ol>
+<li>DY-2 × 2</li>
+<li>BOTTY (δ<sup>18</sup>O = -7)  × 2</li>
+<li>SPIT (δ<sup>18</sup>O = 0, or SWIM?) × 2</li>
 </ol>
 </li>
 </ol>
+<p>Tips:</p>
+<ul>
+<li>caps are not tight</li>
+<li>no bubbles</li>
+<li>~1.5 h for one analysis</li>
+<li>password: picarro</li>
+</ul>
 <h2 id="procedures">Procedures</h2>
 <ol>
-<li>Check N<sub>2</sub> cylinder ( bar)</li>
-<li>
-<p>Autosampler</p>
-<ol>
-<li>Change septa</li>
-<li><code>Chg syringe</code><ol>
-<li>solvent</li>
-<li>rinse</li>
+<li>Turn on<ol>
+<li><code>Start Instrument</code></li>
+<li>vaporiser pump</li>
+<li>N<sub>2</sub> cylinder (?2.5 psi, never &gt;5 psi)<ul>
+<li>H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Autosampler (<mark>open Autosampler before Coordinator</mark>)<ol>
+<li>Replace septa</li>
+<li>? Replace metal insert</li>
+<li><code>Chg syringe</code> (10 µl)<ol>
+<li>take off syringe (middle and top latch)</li>
+<li>rinse ×3 with solvent, rinse ×3 with RO water</li>
+<li>install syringe (lift bottom lever before passing needle through 2 holes)</li>
 <li><code>Swap done</code></li>
 </ol>
 </li>
 </ol>
 </li>
-<li>
-<p>Run list folder</p>
-</li>
-<li>
-<p>Coordinator</p>
-<ul>
+<li>Edit sequence in <code>Run List</code> folder</li>
+<li>Coordinator<ul>
 <li><code>O17 high precision</code></li>
-<li>Load sample list</li>
+<li><code>Load sample list</code></li>
 </ul>
 </li>
 <li>
-<p>Monitor</p>
-<ul>
-<li>H<sub>2</sub>O ppm</li>
+<p>Autosampler</p>
+<ol>
+<li>
+<p>select job?</p>
+</li>
+<li>
+<p><code>Start Current Job</code></p>
+</li>
+<li>Check</li>
+<li>H<sub>2</sub>O  ≈ 20,000 ppm</li>
+<li>peak shape: &hellip;</li>
 <li>Outlet valve</li>
+<li>?external heater: 12V, T = 110 °C</li>
+<li>stable cavity T: 79.994–80.004 °C</li>
+<li>data:<ul>
+<li>SD?? δ<sup>18</sup>O = 0.1‰, δD = 1‰</li>
+<li>SPIT δ<sup>18</sup>O: (-1 to 1‰)</li>
 </ul>
+</li>
+<li>Post run</li>
+<li>rinse syringe</li>
+<li>if idle for long time<ol>
+<li>turn off N<sub>2</sub> cylinder</li>
+<li>turn off vaporiser pump</li>
+</ol>
 </li>
 </ol>
+</li>
+</ol>
+<h2 id="misc">Misc.</h2>
+<h3 id="replace-catalyst">Replace catalyst</h3>
 
 
 
@@ -844,7 +902,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
         <script src="../../js/katex.js"></script>
       
