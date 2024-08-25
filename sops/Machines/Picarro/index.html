@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Methods/CleanPFA/" class="md-tabs__link">
+        <a href="../../Methods/ForaminiferaCleaning/" class="md-tabs__link">
           
   
   Methods
@@ -722,27 +722,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Methods/CleanPFA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Clean PFA or FEP wares
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../Methods/ForaminiferaCleaning/" class="md-nav__link">
         
   
@@ -851,11 +830,12 @@
 <h2 id="procedures">Procedures</h2>
 <ol>
 <li>Turn on<ol>
-<li>Open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears</li>
+<li>open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears</li>
 <li>vacuum pump for vaporization module</li>
 <li>vaporization module: T = 110 °C (external heater powered by 12V)</li>
-<li>turn on N<sub>2</sub> supply by opening the valve on the metal pipe line<ul>
-<li>tune N<sub>2</sub> pressure by outlet valve of gas regulator (ca. 2.5 psi, never &gt;5 psi) ⟹ H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
+<li>reverse &ldquo;Post run&rdquo;<ul>
+<li>wait 1&ndash;2 h until H<sub>2</sub>O &lt; 100 ppm</li>
+<li>when? tune N<sub>2</sub> pressure by outlet valve of gas regulator (ca. 2.5 psi, never &gt;5 psi) ⟹ H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
 </ul>
 </li>
 </ol>
@@ -883,8 +863,16 @@
 <li><code>Load Sample Descriptions</code></li>
 </ul>
 </li>
-<li>Autosampler: Run</li>
-<li>Check<ul>
+<li>
+<p>Autosampler:</p>
+<ol>
+<li>make sure method is <code>Picarro Z</code></li>
+<li><code>Run</code></li>
+</ol>
+</li>
+<li>
+<p>Check</p>
+<ul>
 <li>H<sub>2</sub>O  ≈ 20,000 ppm (pump to ~300 ppm)</li>
 <li>peak shape: &hellip;</li>
 <li>Outlet valve: 27000 when pumping, 24000 when measuring</li>
@@ -903,7 +891,7 @@
 <li>Post run<ol>
 <li>rinse syringe</li>
 <li>if idle for long time<ol>
-<li>turn off N<sub>2</sub> supply by closing the valve on the metal pipe line, NOT valves on gas regulator</li>
+<li>turn off N<sub>2</sub> supply by closing the black Swagelok valve on the metal pipe line and the cylinder valve, DO NOT change valves on gas regulator</li>
 <li>turn off vacuum pump for vaporization module</li>
 <li>disconnect metal pipe line and let vaporization module open to the air</li>
 </ol>

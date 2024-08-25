@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Methods/CleanPFA/" class="md-tabs__link">
+        <a href="../../Methods/ForaminiferaCleaning/" class="md-tabs__link">
           
   
   Methods
@@ -469,9 +469,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-preparation-dic" class="md-nav__link">
+  <a href="#preparation-dic" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample preparation (DIC)
+      Preparation (DIC)
     </span>
   </a>
   
@@ -716,27 +716,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Methods/CleanPFA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Clean PFA or FEP wares
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../Methods/ForaminiferaCleaning/" class="md-nav__link">
         
   
@@ -816,38 +795,67 @@
 
 
 <h1 id="delta-v-advantagegasbench-2">DELTA V Advantage&ndash;GasBench (2)</h1>
-<h2 id="sample-preparation-dic">Sample preparation (DIC)</h2>
+<h2 id="preparation-dic">Preparation (DIC)</h2>
 <ul>
+<li>Preparation</li>
 <li>
-<p>Sequence:</p>
-<ul>
-<li>BOTTY × 2, FLORIDA × 2, 10 samples, BOTTY × 2, FLORIDA × 2, &hellip;</li>
-</ul>
+<p><mark class="valve-on">[DIC]</mark><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> rinse standard bottles and <mark>dry in the oven</mark></p>
 </li>
 <li>
-<p>Add acid and flush</p>
-<ul>
-<li>4 drops of H<sub>3</sub>PO<sub>4</sub>, cap, flush (5h 50min for 12 stds + 20 samples + 2 spares)</li>
-<li>Tighten cap (with gloves) until septum is slightly depressed in the center</li>
-<li><code>Flushfill DIC BLOCK MISC JR.seq</code>, <code>DIC FLUSHFILL 9 MIN MOD.met</code></li>
+<p>sample tray temperature: 21 °C</p>
+</li>
+<li>Add acid and flush<ul>
+<li>sequence: BOTTY × 2 (<mark class="valve-on">[DIC]</mark> or BOTTY with accurate weight × 3), FLORIDA × 2, 10 samples, BOTTY × 2, FLORIDA × 2, &hellip;</li>
+<li>add 4 drops of H<sub>3</sub>PO<sub>4</sub> using an LDPE pipette (LW4111), ensuring the acid drops directly to the bottom without sticking onto the sides of the vial</li>
+<li>tighten cap (with gloves) until septum is slightly depressed in the center</li>
+<li>flush (5h 50min for 12 stds + 20 samples + 2 spares)<ul>
+<li>use needle for flush, sort needle capillaries</li>
+<li>!!! check flow rate <mark>before and after</mark> the sequence, should be equal</li>
+<li>config: <code>Gasbench</code></li>
+<li><code>DIC FLUSHFILL 9min MOD.met</code></li>
+<li>Y vials: <code>Flushfill DIC block MISC JR.seq</code></li>
+<li><mark class="valve-on">[DIC]</mark> normal vials:  <code>Flushfill DIC carbonate block.seq</code></li>
 </ul>
 </li>
-<li>
-<p>Standards</p>
-<ul>
-<li>Standards: <ul>
+</ul>
+</li>
+<li>Standards<ul>
+<li>standards: <ul>
 <li>BOTTY NaHCO<sub>3</sub>: δ<sup>13</sup>C<sub>VPDB</sub> = −4.22‰</li>
 <li>FLORIDA KHCO<sub>3</sub>: δ<sup>13</sup>C<sub>VPDB</sub> = −23.91‰</li>
 </ul>
 </li>
-<li>Standard concentration:<ul>
-<li>seawater: 20 mg/100 mL NaHCO<sub>3</sub> or KHCO<sub>3</sub></li>
+<li>concentration:<ul>
+<li><a href="https://www.ncei.noaa.gov/access/ocean-carbon-acidification-data-system/oceans/Handbook_2007.html">seawater</a>: 1800&ndash;2300 µmol/kg (Black Sea: 3800&ndash;4300), 20 mg/100 mL NaHCO<sub>3</sub> or KHCO<sub>3</sub></li>
 </ul>
 </li>
-<li>Boil ~500 mL (1L beaker) DI water for ~5 min, totally ~25 min (@370 °C hotplate)</li>
+<li>boil ~500 mL (1L beaker) DI water for ~5 min (totally ~25 min, @370 °C hotplate)</li>
+<li>make standard solutions<ul>
+<li><mark class="valve-on">[DIC]</mark> make additional 3 BOTTY with volumetric flasks, encompassing sample [DIC]<ol>
+<li><a href="https://www.sigmaaldrich.com/GB/en/product/sigma/w1126">weighing boat (W1126-100EA)</a>, tare</li>
+<li>add powder, tare</li>
+<li>transfer to volumetric flask</li>
+<li>(wipe off water on weighing boat without losing powder)</li>
+<li>add water to volumetric flask, <mark>rinse grinding mouth before putting a stopper on</mark></li>
+<li>record (negative) balance reading</li>
+</ol>
+</li>
 </ul>
 </li>
-<li>Add 1.5 mL solution with 2.5 mL syringe (Terumo SS*02SE21251)</li>
+</ul>
+</li>
+<li>Inject solution with 2.5 mL syringe (Terumo SS*02SE21251)<ul>
+<li>1.5 mL in Y vials, 0.6 ml in normal vials</li>
+<li><mark class="valve-on">[DIC]</mark> record weights, 2.2 mL in normal vials (He-dilution during measurement)<ol>
+<li>holder + vial, tare and record time (only for the 1<sup>st</sup> one), record balance reading</li>
+<li>draw solution into syringe, <mark>remove air bubbles</mark></li>
+<li>pierce at the edge, inject, push the plunger until no droplet remains, <mark>pull out quickly while keeping the plunger in position</mark></li>
+<li>centrifuge, 2600 RPM, 1 min, max accelerate/decelerate</li>
+<li>react in the sample tray for <a href="https://doi.org/10.4319/lom.2005.3.349">18&ndash;24 h</a></li>
+</ol>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="procedures">Procedures</h2>
 <ol>
@@ -855,20 +863,23 @@
 <p>Prepare</p>
 <ul>
 <li>
-<p>Needle</p>
+<p>use needle for measurement, sort needle capillaries</p>
 </li>
 <li>
-<p>Config: <code>Gasbench</code></p>
+<p>config: <code>Gasbench</code></p>
 </li>
+<li>move each vial so that its cap is at the center of the hole</li>
+<li>Run seq</li>
+<li>seq:<ul>
+<li>Y vials: <code>DIC *.seq</code></li>
+<li><mark class="valve-on">[DIC]</mark> normal vials: <code>DIC carbonate block *.seq</code></li>
 </ul>
 </li>
-<li>
-<p>move each vial so that its cap is at the center of the hole</p>
+<li>method:<ul>
+<li><code>measure only GODWIN 120.met</code>: Activation Amplitude [mV] = 10000</li>
+<li><code>measure only GODWIN 120 2000 dilution.met</code>: Activation Amplitude [mV] = 2000, &gt;5000 of working gas, so always dilute</li>
+</ul>
 </li>
-<li>sort capillary</li>
-<li>Run seq<ul>
-<li>seq: </li>
-<li>method: </li>
 </ul>
 </li>
 </ol>
@@ -909,9 +920,25 @@
 <td>On/Off 44, 45, 46</td>
 <td>5000, 6000, 7000 mV</td>
 </tr>
+<tr>
+<td>He</td>
+<td>cylinder 3 Bar, ConFlo III: ~1.</td>
+</tr>
+<tr>
+<td>CO<sub>2</sub></td>
+<td>cylinder ~2.5 Bar, ConFlo III: ~1.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="misc">Misc.</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Steps for measuring both δ<sub>DIC</sub> and [DIC], otherwise δ<sub>DIC</sub> only&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 

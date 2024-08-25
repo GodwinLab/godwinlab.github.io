@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Methods/CleanPFA/" class="md-tabs__link">
+        <a href="../../Methods/ForaminiferaCleaning/" class="md-tabs__link">
           
   
   Methods
@@ -767,27 +767,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Methods/CleanPFA/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Clean PFA or FEP wares
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../Methods/ForaminiferaCleaning/" class="md-nav__link">
         
   
@@ -870,18 +849,24 @@
 <p>Costech ECS 4010</p>
 <h2 id="sample-preparation">Sample preparation</h2>
 <ul>
-<li>
-<p>Standards: </p>
-<ul>
+<li><a href="https://shop.elemtex.com/products/se1003">Tin Capsules SE1003.250</a></li>
+<li>Standards:<ul>
 <li><a href="https://analytical-reference-materials.iaea.org/iaea-600">IAEA-600</a>: (C/N = 5, δ<sup>13</sup>C<sub>VPDB</sub> = −27.771‰, δ<sup>15</sup>N<sub>Air</sub> = +1‰): 400 µg</li>
 <li><a href="https://tsapps.nist.gov/srmext/certificates/archives/8573.pdf">USGS40</a> (RM 8573, C/N = 5, δ<sup>13</sup>C<sub>VPDB</sub> = −26.39‰, δ<sup>15</sup>N<sub>Air</sub> = −4.52‰): 800 µg</li>
 <li>CC31 (Whatman® α-cellulose, δ<sup>13</sup>C<sub>VPDB</sub> = −25.54‰, δ<sup>18</sup>O<sub>SMOW</sub> = 31.85‰)</li>
+<li>Acetanilide OAS (C: 70.96%, H: 6.73%, N: 10.26%, O: 11.91%) calibrated to <a href="https://shop.nist.gov/ccrz__CCPage?pageKey=SRMArchive">Acetanilide 141d</a><ul>
+<li>100, 500, 1000 µg</li>
 </ul>
 </li>
-<li>
-<p>Sequence:</p>
-<ul>
-<li>dummy at the end: in case auto-sampler is stuck</li>
+<li>Atropine</li>
+<li>Phenacetin</li>
+</ul>
+</li>
+<li>Sequence:<ul>
+<li>BYPASS at the beginning: check</li>
+<li>BYPASS at the end: in case auto-sampler is stuck?</li>
+<li>3&ndash;5 IAEA-600, 3&ndash;5 USGS40, blank, 3&ndash;4 Acetanilide OAS/Atropine/Phenacetin</li>
+<li>Sample Tray: 0&ndash;49, 50&ndash;99, 100&ndash;149(, 150&ndash;199)</li>
 </ul>
 </li>
 </ul>
@@ -891,12 +876,13 @@
 <li>He cylinder</li>
 <li>Total number of analysis, de-ash/change chemicals</li>
 <li>Vac = xe-6 bar indicating needle valve is on</li>
-<li>Slider&hellip;</li>
+<li>Autosampler (Thermo / CE Instruments / Carlo Erba AS200) slider&hellip;</li>
 <li>He flow rate to the auto-sampler: 80&ndash;100 mL/min</li>
 </ul>
 </li>
 <li>Work&ndash;Enter:<ul>
-<li>Rise temperatures for L reaction, R reduction, O GC</li>
+<li>Remote</li>
+<li>Rise temperatures for L reaction (Cr), R reduction (Cu), O GC</li>
 <li>ca. 45 min</li>
 </ul>
 </li>
@@ -907,7 +893,7 @@
 <p>per ca. 200 samples</p>
 <ol>
 <li>Turn off source</li>
-<li>Turn off needle valve (turn knob clockwise ~360°, check: Vac xe-6 → xe-8)</li>
+<li>Turn off needle valve (<mark>turn knob clockwise ~360°, finger tight</mark>, check: Vac xe-6 → xe-8)</li>
 <li>Check: <ul>
 <li>left T = 820 °C, right T = 450 °C</li>
 <li>gas flow is off (switch on/off by <code>F3</code>)</li>
@@ -922,7 +908,7 @@
 </li>
 <li>Press F3: gas flow on, leak check</li>
 <li>Press F3: gas flow off</li>
-<li>ConFlo IV: <mark>Sample dilution max (98%)</mark></li>
+<li>ConFlo IV: <mark>sample dilution max (98%)</mark></li>
 <li>Turn on needle valve (counterclockwise, check: Vac xe-8 → xe-6)</li>
 <li>Turn on source</li>
 <li>Write down total (TOT) run number in log book</li>
@@ -939,7 +925,7 @@
 <li>Prepare new Cr tube &amp; Cu tube<ol>
 <li>Deash metal insert, put into Cr tube</li>
 <li>For better seal: take out extra quartz wool (Elemtex LECO® 502-177), push back so that no fibers stick out</li>
-<li>Put a black rubber O-ring on the top end (ref: packing diagrams in the manual)</li>
+<li>Put a black rubber O-ring on the top end, 3? mm from the top (ref: packing diagrams in the manual)</li>
 </ol>
 </li>
 <li>Take out 2 tubes (Cr tube, and then Cu tube)<ol>
@@ -959,14 +945,14 @@
 <li>Take out very hot tube (<mark>away from PFA tube</mark>)</li>
 </ol>
 </li>
-<li>Install 2 tubes (Cr tube, and then Cu tube)<ol>
+<li>Install 2 tubes (left Cr tube, and then right Cu tube)<ol>
 <li>Insert tube, connect top</li>
 <li>Connect bottom</li>
 <li>Press F3: gas flow on, leak check: all 4 connections, Press F3: gas flow off</li>
 </ol>
 </li>
-<li>Change Mg(ClO<sub>4</sub>)<sub>2</sub> tube for water trap<ul>
-<li>Open closure</li>
+<li>Change water trap Mg(ClO<sub>4</sub>)<sub>2</sub> tube<ul>
+<li>Open closure beneath the digital display</li>
 <li>Unscrew both ends, take off, clear</li>
 <li>Insert quartz wool on one end, push it to the other end with an Allen key</li>
 <li>Refill Mg(ClO<sub>4</sub>)<sub>2</sub> (Acros Organics 413461000) with a funnel. Shake, but not too tight.</li>
@@ -1030,6 +1016,22 @@
 <tr>
 <td>On/Off 44, 45, 46</td>
 <td>,,</td>
+</tr>
+<tr>
+<td>He</td>
+<td>cylinder  Bar, Costech:</td>
+</tr>
+<tr>
+<td>O<sub>2</sub></td>
+<td>cylinder Bar</td>
+</tr>
+<tr>
+<td>CO<sub>2</sub></td>
+<td></td>
+</tr>
+<tr>
+<td>N<sub>2</sub></td>
+<td></td>
 </tr>
 </tbody>
 </table>
