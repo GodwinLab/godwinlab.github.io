@@ -804,7 +804,7 @@
 <h2 id="sample-preparation">Sample preparation</h2>
 <ol>
 <li>1.5 mL sample (nominal ⌀ 9 mm; vial: 11.6×32 mm Fisherbrand 10162512; cap: silicone/PTFE septa, thickness 1 mm, Fisherbrand 11787567)</li>
-<li>Sequence: DY-2 × 2, BOTTY × 2, SPIT 2 × 2, (5 samples, BOTTY), &hellip;</li>
+<li>Sequence: DI water, DY-2 × 2, BOTTY × 2, SPIT 2 × 2, (5 samples, BOTTY), &hellip;</li>
 <li>200 µl standard in reusable micro-insert (MACHEREY‑NAGEL 702818 0.1 mL), mark on caps<ul>
 <li>DY-2: δ<sup>18</sup>O = −23.08‰</li>
 <li>BOTTY: δ<sup>18</sup>O = −7.4‰</li>
@@ -823,9 +823,15 @@
 </ul>
 </li>
 <li>
-<p>1.5 h for one analysis (10 injections)</p>
+<p>1.5 h for one analysis</p>
+<ul>
+<li>10 injections</li>
+<li>9 mins/peak</li>
+</ul>
 </li>
-<li>password: picarro</li>
+<li>
+<p>password: picarro</p>
+</li>
 </ul>
 <h2 id="procedures">Procedures</h2>
 <ol>
@@ -859,20 +865,18 @@
 </li>
 <li>Edit sequence in <code>Run List</code> folder</li>
 <li>Coordinator<ul>
+<li>restart</li>
 <li><code>O17 high precision</code></li>
+<li><code>New Output File...</code></li>
 <li><code>Load Sample Descriptions</code></li>
 </ul>
 </li>
-<li>
-<p>Autosampler:</p>
-<ol>
+<li>Autosampler:<ol>
 <li>make sure method is <code>Picarro Z</code></li>
 <li><code>Run</code></li>
 </ol>
 </li>
-<li>
-<p>Check</p>
-<ul>
+<li>Check and tune during the measurement of the first DI water<ul>
 <li>H<sub>2</sub>O  ≈ 20,000 ppm (pump to ~300 ppm)</li>
 <li>peak shape: &hellip;</li>
 <li>Outlet valve: 27000 when pumping, 24000 when measuring</li>
