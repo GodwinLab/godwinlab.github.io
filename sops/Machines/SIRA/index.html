@@ -731,9 +731,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#stuck-during-run" class="md-nav__link">
+  <a href="#cold-finger" class="md-nav__link">
     <span class="md-ellipsis">
-      Stuck during run
+      Cold finger
     </span>
   </a>
   
@@ -969,6 +969,7 @@
 <li>Open &amp; close ground-glass stopper of acid bottle</li>
 <li>Remove LN<sub>2</sub> tubes from dewar</li>
 <li>Check 2 LN<sub>2</sub> tube connections to cold fingers</li>
+<li>Thermocouples on cold fingers</li>
 <li>Put lids on samples</li>
 </ol>
 </li>
@@ -1092,15 +1093,15 @@
 <li>!!! After run: Enable changeover</li>
 </ol>
 </li>
-<li>Connect sample tube (during run for last sample/reference gas)<ol>
+<li>Connect next sample tube (during a measurement)<ol>
 <li>Check <mark class="valve-off">RI</mark></li>
-<li>Disconnect organic reference gas cylinder or last sample tube</li>
-<li>Cut glass sample tube, insert into metal tube (from the simple end)</li>
-<li>Connect (the more complicated end with a filter) to reference gas inlet</li>
+<li>Disconnect organic reference gas cylinder or sample tube that is currently being measured, broken glass tube goes to a yellow bin</li>
+<li>Cut glass sample tube, insert into metal tube (<mark>from the simple end without filter</mark>) </li>
+<li>Connect (the end with a Swagelok 15 µm filter) to reference gas inlet</li>
 <li><mark class="valve-on">LV</mark>, <mark class="valve-on">RI</mark>, <mark class="valve-on">RP</mark>, <mark class="valve-on">SP</mark> (space between <mark class="valve-off">RF</mark> and <mark class="valve-off">SF</mark>)</li>
 </ol>
 </li>
-<li>Fill sample gas (after run for last sample/reference gas)<ol>
+<li>Introduce sample gas (after a successful measurement)<ol>
 <li>Set sample gas bellow to 0</li>
 <li><mark class="valve-on">LV</mark>, <mark class="valve-on">RI</mark>, <mark class="valve-on">RP</mark>, <mark class="valve-on">SP</mark>, <mark class="valve-on">SF</mark>, <mark class="valve-on">SV</mark>, <mark class="valve-on">SM</mark> (space between <mark class="valve-off">RF</mark> and <mark class="valve-off">SC</mark>) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16v34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32S289.7 0 272 0h-96zm72 192v128c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> until <code>LV</code> vac ≈ 1.0e-3</li>
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zm384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/></svg></span><code>Inlet</code>&ndash;<code>Toggle C/O Valve</code>, <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16v34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32S289.7 0 272 0h-96zm72 192v128c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg></span> until <code>Mass-44</code> &lt; 4e-11 A</li>
@@ -1143,6 +1144,24 @@
 </li>
 </ul>
 </li>
+<li>Change filament<ol>
+<li>a thoria or yttria coated filament, Cu O-ring, two &frac14; inch gold O-rings, one bigger gold O-ring</li>
+<li>turn off diffusion pump, cool down for ~1h</li>
+<li>close (Edwards Speedivalve) valve between diffusion pump and backing rotary vacuum</li>
+<li><code>Source OFF</code></li>
+<li>unplug AMP 1, 2, 3, suppressor, take off 3 screws</li>
+<li>lift magnet off (DO NOT damage flight tube)</li>
+<li>unplug all lines (7+1 red, 1)</li>
+<li>disconnect xxx tube (4+4 screws, two &frac14; inch gold O-rings), remember orientation</li>
+<li>disconnect xxx (one bigger gold O-ring): take off 6 screws, and then evenly screw up 3 screws</li>
+<li>take off source (8 screws: one is shorter, take off 5, loose 3)</li>
+<li>install filament (parallel &amp; 1 mm gap)</li>
+</ol>
+</li>
+<li>Idle for long time<ul>
+<li><code>Dispense Acid</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="troubleshoot">Troubleshoot</h2>
 <h3 id="stop-batch">Stop batch</h3>
@@ -1158,6 +1177,7 @@
 <li>reboot computer with GUI</li>
 <li>Initialise Gilson</li>
 </ol>
+<p>Stuck during run: reboot computer connected directly to SIRA, wait until done (check screen under the table), and then reboot computer with GUI</p>
 <h3 id="power-cut">Power cut</h3>
 <ol>
 <li>Ion Gauge tripped:<ol>
@@ -1188,8 +1208,10 @@
 <h3 id="solenoid-valve-leak">Solenoid valve leak</h3>
 <p>Symptom: hear the leak</p>
 <p>Solution: change (3) valve seals</p>
-<h3 id="stuck-during-run">Stuck during run</h3>
-<p>Solution: reboot computer connected directly to SIRA, wait until done (check screen under the table), and then reboot computer with GUI</p>
+<h3 id="cold-finger">Cold finger</h3>
+<ul>
+<li>thermocouple falls off: silicon gel (LOCTITE SI 595), ~1 h</li>
+</ul>
 <h3 id="error-small-sample-size">Error: small sample size</h3>
 <ul>
 <li>check sample vial: sample in a bubble </li>
