@@ -623,9 +623,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#replace-catalyst" class="md-nav__link">
+  <a href="#replace-catalyst-for-micro-combustion-module-mcm-a0214" class="md-nav__link">
     <span class="md-ellipsis">
-      Replace catalyst
+      Replace catalyst for Micro Combustion Module (MCM A0214)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clean-vaporizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clean vaporizer
     </span>
   </a>
   
@@ -633,6 +642,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
   
 </li>
       
@@ -837,18 +855,18 @@
 <ol>
 <li>Turn on<ol>
 <li>open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears</li>
-<li>vacuum pump for vaporization module</li>
-<li>vaporization module: T = 110 °C (external heater powered by 12V)</li>
-<li>reverse &ldquo;Post run&rdquo;<ul>
-<li>wait 1&ndash;2 h until H<sub>2</sub>O &lt; 100 ppm</li>
-<li>when? tune N<sub>2</sub> pressure by outlet valve of gas regulator (ca. 2.5 psi, never &gt;5 psi) ⟹ H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
+<li>connect vaporizer to N<sub>2</sub> cylinder via metal pipe line</li>
+<li>vacuum pump for vaporizer (A0211)</li>
+<li>turn on N<sub>2</sub> supply by open the Swagelok toggle valve on the metal pipe line and the cylinder valve, DO NOT change gas regulator</li>
+<li>vaporizer: 10s mins to reach 110 °C (external heater powered by 12V)</li>
+<li>wait 1&ndash;2 h until H<sub>2</sub>O &lt; 100 ppm<ul>
+<li>tune N<sub>2</sub> pressure by outlet valve of gas regulator (<mark>ca. 2.5 psi, never &gt;5 psi</mark>) ⟹ mean H<sub>2</sub>O ≈ 20,000 (±500) ppm (decreases as N<sub>2</sub> pressure increases)</li>
 </ul>
 </li>
 </ol>
 </li>
-<li>Autosampler (<mark>open Autosampler before Coordinator</mark>)<ol>
-<li>Replace septa (Restek 23878)</li>
-<li>? Replace metal insert</li>
+<li>Autosampler (A0325, <mark>open Autosampler before Coordinator</mark>)<ol>
+<li>Replace vaporizer injection port septum (per 200&ndash;300 injections, Restek 23878), replace metal salt liner (+ ⌀ ? O-ring), <mark>finger-tighten</mark></li>
 <li><code>Chg Syringe</code> (10 µl, Trajan 002980)<ol>
 <li>take off syringe<ul>
 <li>release middle and top latch</li>
@@ -864,9 +882,9 @@
 </ol>
 </li>
 <li>Edit sequence in <code>Run List</code> folder</li>
-<li>Coordinator<ul>
-<li>restart</li>
-<li><code>O17 high precision</code></li>
+<li>Open <code>Coordinator Launcher</code><ul>
+<li>close and reopen</li>
+<li><code>O17 high precision</code> mode</li>
 <li><code>New Output File...</code></li>
 <li><code>Load Sample Descriptions</code></li>
 </ul>
@@ -893,18 +911,19 @@
 </ul>
 </li>
 <li>Post run<ol>
+<li>if idle for long time, reverse &ldquo;Turn on&rdquo; step 4&ndash;2</li>
 <li>rinse syringe</li>
-<li>if idle for long time<ol>
-<li>turn off N<sub>2</sub> supply by closing the black Swagelok valve on the metal pipe line and the cylinder valve, DO NOT change valves on gas regulator</li>
-<li>turn off vacuum pump for vaporization module</li>
-<li>disconnect metal pipe line and let vaporization module open to the air</li>
-</ol>
-</li>
+<li>sonicate salt liner (remove O-ring first)</li>
 </ol>
 </li>
 </ol>
 <h2 id="misc">Misc.</h2>
-<h3 id="replace-catalyst">Replace catalyst</h3>
+<h3 id="replace-catalyst-for-micro-combustion-module-mcm-a0214">Replace catalyst for Micro Combustion Module (MCM A0214)</h3>
+<h3 id="clean-vaporizer">Clean vaporizer</h3>
+<ol>
+<li>reverse &ldquo;Turn on&rdquo; step 5&ndash;2, wait ?h for cooling down</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
 
 
 
