@@ -623,18 +623,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#replace-catalyst-for-micro-combustion-module-mcm-a0214" class="md-nav__link">
+  <a href="#clean-vaporizer" class="md-nav__link">
     <span class="md-ellipsis">
-      Replace catalyst for Micro Combustion Module (MCM A0214)
+      Clean vaporizer
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#clean-vaporizer" class="md-nav__link">
+  <a href="#replace-catalyst-for-micro-combustion-module-mcm-a0214" class="md-nav__link">
     <span class="md-ellipsis">
-      Clean vaporizer
+      Replace catalyst for Micro Combustion Module (MCM A0214)
     </span>
   </a>
   
@@ -651,6 +651,21 @@
       Troubleshooting
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-freezing" class="md-nav__link">
+    <span class="md-ellipsis">
+      software freezing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -854,7 +869,11 @@
 <h2 id="procedures">Procedures</h2>
 <ol>
 <li>Turn on<ol>
-<li>open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears</li>
+<li>open app: <code>Start Instrument</code>, <code>CRDS Data Viewer</code> appears<ul>
+<li>Settings&ndash;Change GUI Mode from Standard to Service (psw: picarro)</li>
+<li>choose: H2O, OutletValve, WarmBoxTemp, CavityTemp</li>
+</ul>
+</li>
 <li>connect vaporizer to N<sub>2</sub> cylinder via metal pipe line</li>
 <li>vacuum pump for vaporizer (A0211)</li>
 <li>turn on N<sub>2</sub> supply by open the Swagelok toggle valve on the metal pipe line and the cylinder valve, DO NOT change gas regulator</li>
@@ -883,7 +902,7 @@
 </li>
 <li>Edit sequence in <code>Run List</code> folder</li>
 <li>Open <code>Coordinator Launcher</code><ul>
-<li>close and reopen</li>
+<li><mark>! close and reopen before loading new sample descriptions</mark></li>
 <li><code>O17 high precision</code> mode</li>
 <li><code>New Output File...</code></li>
 <li><code>Load Sample Descriptions</code></li>
@@ -918,12 +937,22 @@
 </li>
 </ol>
 <h2 id="misc">Misc.</h2>
-<h3 id="replace-catalyst-for-micro-combustion-module-mcm-a0214">Replace catalyst for Micro Combustion Module (MCM A0214)</h3>
 <h3 id="clean-vaporizer">Clean vaporizer</h3>
 <ol>
-<li>reverse &ldquo;Turn on&rdquo; step 5&ndash;2, wait ?h for cooling down</li>
+<li>reverse &ldquo;Turn on&rdquo; step 5&ndash;2<ul>
+<li>wait ?h for cooling down</li>
+</ul>
+</li>
+<li>soak with DI water (add ? HOAc)</li>
+<li>solenoid valves (Gems Sensors &amp; Controls A2016-MM3-V-C203), O-rings</li>
 </ol>
+<h3 id="replace-catalyst-for-micro-combustion-module-mcm-a0214">Replace catalyst for Micro Combustion Module (MCM A0214)</h3>
 <h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="software-freezing">software freezing</h3>
+<ul>
+<li>do not use the Windows Task Manager to kill. Use “Stop Instrument” in the Diagnostics folder (Stop software but keep driver running)</li>
+<li>restart: shutdown Windows, wait a few seconds, press power button</li>
+</ul>
 
 
 
