@@ -369,6 +369,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Aerodyne
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -378,6 +389,100 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status check
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misc.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mixing-ratio-noise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mixing Ratio Noise
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tune-laser-tuning-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tune: Laser tuning rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safety
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -729,9 +834,92 @@
 
 
 <h1 id="aerodyne">Aerodyne</h1>
+<h2 id="procedures">Procedures</h2>
+<ol>
+<li>chiller</li>
+<li>main power</li>
+<li>vacuum pump<ol>
+<li>check valve closed</li>
+<li>turn on pump</li>
+<li>slowly open valve</li>
+</ol>
+</li>
+<li>TDLWintel</li>
+<li>slowly open inlet valve<ol>
+<li>Toggle Controls&ndash;right click PL (pressure lock)</li>
+</ol>
+</li>
+<li>Current Sig &amp; Field 1, tune laser T</li>
+<li>Stream Mode</li>
+<li>Toggle Controls&ndash;enable flk4 (reference lock)</li>
+<li>Toggle Controls&ndash;enable wd (write data), ass (automatic spectrum save)</li>
+</ol>
+<p>Turn off:</p>
+<ol>
+<li>wd, ass, flk4, PL</li>
+<li>Stream Mode -&gt; Current Sig</li>
+<li>flush with dry air (avoid condensation)</li>
+<li>vacuum valve. saturated reading: ~ 100 torr</li>
+<li>TDLWintel</li>
+<li>PC</li>
+<li>main power</li>
+<li>chiller, vacuum pump</li>
+</ol>
+<p>Schedules&ndash;ECL scripts</p>
+<h3 id="status-check">Status check</h3>
 <ul>
-<li><a href="https://lasersafetyindustries.com/collections/eyewear/products/950nm-11000nm-laser-safety-glasses">Laser Safety Glasses 205 Glass IR, 100-35-205</a></li>
+<li>Stream Mode</li>
+<li>blue line</li>
+<li>Command&ndash;Quick Keystrokes&ndash;Kopy konditions to klipboard</li>
+<li>laser<ul>
+<li>T: 0.01 °C, 0.3 mA</li>
+<li>light level: Status. &lt;10%, usually higher is better</li>
 </ul>
+</li>
+<li>gas pressure<ul>
+<li>Status</li>
+</ul>
+</li>
+<li>fitting quality<ul>
+<li>DT (transmission mode)</li>
+<li>residual</li>
+</ul>
+</li>
+<li>particle filter: white</li>
+<li>chiller<ul>
+<li>liquid level</li>
+</ul>
+</li>
+</ul>
+<h3 id="data">Data</h3>
+<ol>
+<li>wd: off, and then on</li>
+<li>Igor</li>
+<li>Macros&ndash;TDLWintel File Loader Functions&ndash;STR Files Loader</li>
+</ol>
+<h2 id="misc">Misc.</h2>
+<h3 id="mixing-ratio-noise">Mixing Ratio Noise</h3>
+<ul>
+<li>Concentration Stripchart: ppb (SD)</li>
+<li>Allan-Werle Variance (Igor: Macros&ndash;Data Plots: Allan, Leak, etc):<ul>
+<li>random noise domination: decrease with increasing time window</li>
+<li>instrumental drift domination: increase with increasing time window</li>
+</ul>
+</li>
+</ul>
+<h3 id="tune-laser-tuning-rate">Tune: Laser tuning rate</h3>
+<p>wavelength ~ current</p>
+<ol>
+<li>Command&ndash;Quick Keystrokes&ndash;Fix all peak positions (in the fitting)</li>
+<li>Edit&ndash;Tuning Rate Params (right-click: small change)<ul>
+<li>residual</li>
+</ul>
+</li>
+<li>Command&ndash;Duplicate tuning rate (from Field 1)</li>
+<li>flk4: off, and then on</li>
+</ol>
+<h3 id="safety">Safety</h3>
+<p><a href="https://lasersafetyindustries.com/collections/eyewear/products/950nm-11000nm-laser-safety-glasses">Laser Safety Glasses 205 Glass IR, 100-35-205</a></p>
 
 
 
