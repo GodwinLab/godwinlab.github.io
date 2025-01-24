@@ -1129,8 +1129,12 @@
 </ol>
 <h2 id="misc">Misc.</h2>
 <ul>
-<li>Scan config for OCR : 600 dpi, Gray scale, TIFF</li>
-<li>Replenish reference gas:<ul>
+<li>
+<p>Scan config for OCR : 600 dpi, Gray scale, TIFF</p>
+</li>
+<li>
+<p>Replenish reference gas:</p>
+<ul>
 <li>Stage 1: <mark class="valve-on">RP</mark>, gradually decrease reference gas bellow (increase bellow size) through time<ul>
 <li>until 2024-01-23: 1400</li>
 </ul>
@@ -1149,7 +1153,7 @@
 <ol>
 <li>prepare: a thoria or yttria coated filament, Cu O-ring, two &frac14; inch gold O-rings, one bigger gold O-ring</li>
 <li><code>Source OFF</code></li>
-<li>turn off diffusion pump, cool down for ~1h</li>
+<li>turn off diffusion pump (button at the back), cool down for ~1h</li>
 <li>close (Edwards Speedivalve) valve between diffusion pump and backing rotary vacuum</li>
 <li>disconnect head amplifier: unplug AMP 1, 2, 3, suppressor, take off 3 screws</li>
 <li>lift magnet off (DO NOT damage flight tube)</li>
@@ -1160,7 +1164,7 @@
 <li>install filament (parallel to &amp; 1 mm gap: source magnet)</li>
 <li>reverse 11&ndash;2:<ul>
 <li>parallel magnet with flight tube: two gaps between magnet and flight tube are the same</li>
-<li>before opening diffusion pump, wait until Analyser LV reaches 1e-3</li>
+<li>before opening diffusion pump, wait until Analyser LV reaches 1e-3 mbar</li>
 </ul>
 </li>
 <li>BGD:<ul>
@@ -1168,9 +1172,30 @@
 <li>64h, new ion gauge 0.1 mA: 5e-11, 3e-12, 5e-13; +4 h: 2e-11, 6e-13, 9e-14; &hellip; 1.5e-11, 1.8e-13, 2.2e-14</li>
 </ul>
 </li>
-<li>Idle for long time</li>
-<li><code>Dispense Acid</code></li>
 </ol>
+</li>
+<li>
+<p>Change ATC K1 chiller for diffusion pump</p>
+<blockquote>
+<p>should show 14.0 and 14.0, all lights on, 4 bar</p>
+</blockquote>
+<ol>
+<li>turn off HV &amp; MH, turn on LV &amp; ML</li>
+<li>turn off diffusion pump (button at the back), cool down ~1h</li>
+<li>Ion Gauge tripped when Analyser IG &gt; xe-5 mbar (besides the reading on the screen, can also check the reading on front panel)</li>
+<li>turn off Ion Gauge</li>
+<li>turn off chiller and disconnect in/out tubes</li>
+<li>connect another chiller, turn it on</li>
+<li>turn on diffusion pump, wait ~1h</li>
+<li>turn on Ion Gauge, should drop to xe-7 within hours</li>
+<li>pump ~ ? h until Analyser IG &lt; xe-8 mbar</li>
+</ol>
+</li>
+<li>
+<p>Idle for long time</p>
+<ul>
+<li><code>Dispense Acid</code></li>
+</ul>
 </li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
